@@ -1,0 +1,157 @@
+@import url(//fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+/**
+ * Based on the sky theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+/*********************************************
+ * FONT-FACE DEFINITIONS
+ *********************************************/
+@font-face {
+  font-family: 'Adelle';
+  src: url("../../assets/fonts/adelle_reg-webfont.eot");
+  src: url("../../assets/fonts/adelle_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/adelle_reg-webfont.woff") format("woff"), url("../../assets/fonts/adelle_reg-webfont.ttf") format("truetype"), url("../../assets/fonts/adelle_reg-webfont.svg#AdelleRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adelle';
+  src: url("../../assets/fonts/adelle_semibold-webfont.eot");
+  src: url("../../assets/fonts/adelle_semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/adelle_semibold-webfont.woff") format("woff"), url("../../assets/fonts/adelle_semibold-webfont.ttf") format("truetype"), url("../../assets/fonts/adelle_semibold-webfont.svg#AdelleRegular") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChunkFive';
+  src: url("../../assets/fonts/chunkfive-webfont.eot");
+  src: url("../../assets/fonts/chunkfive-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/chunkfive-webfont.woff") format("woff"), url("../../assets/fonts/../../assets/fonts/chunkfive-webfont.ttf") format("truetype"), url("../../assets/fonts/chunkfive-webfont.svg#ChunkFiveRoman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../../assets/fonts/league_gothic-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background:  #e7ebf1;
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background:    -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background:     -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background:      -o-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background:         radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background-color: #e7ebf1; }
+
+.reveal {
+  font-family: "Adelle", georgia, serif;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  color: #333333; }
+
+::selection {
+  color: white;
+  background: #134674;
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #333333;
+  font-family: "ChunkFive", georgia, serif;
+  font-weight: 100;
+  line-height: 0.9em;
+  letter-spacing: 0;
+  text-shadow: none; }
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); 
+  font-weight: normal;
+}
+
+.reveal h5 {
+	font-family: "Adelle" georgia, serif;
+	color: gray;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #3b759e;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+     -moz-transition: color 0.15s ease;
+      -ms-transition: color 0.15s ease;
+       -o-transition: color 0.15s ease;
+          transition: color 0.15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #74a7cb;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #264c66; }
+
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #3b759e; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #3b759e; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #3b759e; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #3b759e; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #74a7cb; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #74a7cb; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #74a7cb; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #74a7cb; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #3b759e;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
