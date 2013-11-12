@@ -141,7 +141,11 @@
 /*********************************************
  *   What is next
  *********************************************/
-
+.carry-torch .state-background  {
+	background: url(../assets/images/torch.jpg) bottom center; 
+	background-size: cover;
+	opacity: 1;
+}
 
 .tape-measure .state-background {
 	background: url(../assets/images/tape-measure-colored.jpeg) #eee center center;
